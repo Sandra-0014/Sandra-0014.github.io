@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>Sandra Morocho | Portafolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0d1117;
+      color: #e6edf3;
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 20px 8%;
+      background: #161b22;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    header h2 {
+      color: #bb86fc;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    nav a:hover {
+      color: #bb86fc;
+    }
+
+    .hero {
+      min-height: 65vh;
+      padding: 100px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(
+        135deg, #161b22, #30135c, #192c65
+      );
+    }
+
+    .hero h1 {
+      font-size: clamp(36px, 6vw, 56px);
+      margin-bottom: 15px;
+    }
+
+    .hero h1 span {
+      color: #d8b4fe;
+    }
+
+    .hero p {
+      max-width: 650px;
+      font-size: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 25px;
+      color: white;
+      background: #7c3aed;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #9f67fa;
+    }
+
+    section {
+      padding: 70px 10%;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 30px;
+      color: #c4a2ff;
+    }
+
+    .about {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .skills {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .skill {
+      background: #21262d;
+      border: 1px solid #30363d;
+      padding: 12px 22px;
+      border-radius: 8px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .project {
+      background: #161b22;
+      padding: 28px;
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      transition: transform 0.3s;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      border-color: #a78bfa;
+    }
+
+    .project h3 {
+      color: #c4a2ff;
+      margin-bottom: 12px;
+    }
+
+    .project p {
+      margin-bottom: 15px;
+    }
+
+    .tech {
+      color: #a1a1aa;
+      font-size: 14px;
+    }
+
+    .project a {
+      color: #c4a2ff;
+      text-decoration: none;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 10px;
+      color: white;
+      background: #21262d;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      background: #7c3aed;
+    }
+
+    footer {
+      padding: 25px;
+      text-align: center;
+      background: #161b22;
+      color: #9ca3af;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav a {
+        margin: 0 8px;
+      }
+
+      section {
+        padding: 50px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h2>SM.</h2>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#tecnologias">Tecnologías</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="hero" id="inicio">
+      <h1>¡Hola! Soy <span>Sandra Morocho</span></h1>
+      <p>
+        Estudiante de Ingeniería en Software.
+        Me apasiona crear soluciones informáticas
+        que aporten a la sociedad.
+      </p>
+      <a href="#proyectos" class="btn">
+        Explorar mis proyectos
+      </a>
+    </div>
+
+    <section id="sobre-mi">
+      <h2>👩‍💻 Sobre mí</h2>
+      <div class="about">
+        <p>
+          Soy estudiante de Ingeniería en Software,
+          interesada en el desarrollo de aplicaciones
+          web y en el aprendizaje constante de nuevas
+          tecnologías. Disfruto colaborar en proyectos
+          y transformar ideas en soluciones digitales.
+        </p>
+      </div>
+    </section>
+
+    <section id="tecnologias">
+      <h2>🛠️ Lenguajes y tecnologías</h2>
+
+      <div class="skills">
+        <div class="skill">Java</div>
+        <div class="skill">Python</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">TypeScript</div>
+        <div class="skill">PHP</div>
+        <div class="skill">C#</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">React</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">Git y GitHub</div>
+      </div>
+    </section>
+
+    <section id="proyectos">
+      <h2>🚀 Proyectos destacados</h2>
+
+      <div class="projects">
+
+        <article class="project">
+          <h3>🚌 Transporte Interprovincial</h3>
+          <p>
+            Sistema web para administrar cooperativas,
+            buses, rutas y frecuencias de transporte.
+          </p>
+          <p class="tech">
+            React · TypeScript · Python · FastAPI
+          </p>
+          <a
+            href="https://github.com/ReaperMag/Transporte-Interprovincial"
+            target="_blank"
+            rel="noopener noreferrer">
+            Ver proyecto →
+          </a>
+        </article>
+
+        <article class="project">
+          <h3>📊 Depreciación de Activos</h3>
+          <p>
+            Aplicación basada en microservicios
+            para calcular depreciaciones y
+            generar reportes PDF.
+          </p>
+          <p class="tech">
+            C# · .NET 8 · React · SQL Server
+          </p>
+          <a
+            href="https://github.com/Sandra-0014/depreciacion-app"
+            target="_blank"
+            rel="noopener noreferrer">
+            Ver proyecto →
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="contacto" class="contact">
+      <h2>🌐 Conecta conmigo</h2>
+      <p>
+        Puedes encontrarme en mis redes sociales.
+      </p>
+
+      <a href="https://github.com/Sandra-0014"
+         target="_blank"
+         rel="noopener noreferrer">
+        GitHub
+      </a>
+
+      <a href="https://www.instagram.com/m_sandr4/"
+         target="_blank"
+         rel="noopener noreferrer">
+        Instagram
+      </a>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Sandra Morocho | Portafolio personal</p>
+  </footer>
+
+</body>
+</html>
